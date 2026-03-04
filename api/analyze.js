@@ -29,8 +29,8 @@ Analysiere die Webseite ${url} nach diesen Kriterien:
 Bewerte jeden Punkt von 1–10 und gib 2–3 konkrete Verbesserungsvorschläge.
 `;
 
-    const modelPrimary = "claude-sonnet-4-5-20250929";
-    const modelFallback = "claude-3-5-sonnet-20240620";
+    const modelPrimary = "claude-sonnet-4-6";
+    const modelFallback = "claude-sonnet-4-6";
 
     async function callAnthropic(model) {
       const r = await fetch("https://api.anthropic.com/v1/messages", {
